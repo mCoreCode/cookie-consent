@@ -1,0 +1,29 @@
+{
+  "name": "@gc/cookie-consent",
+  "version": "1.0.4",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.geekcoders.cz/gc/cookie-consent",
+    "directory": "libs/cookie-consent"
+  },
+  "publishConfig": {
+    "access": "public",
+    "@gc:registry": "https://gitlab.geekcoders.cz/api/v4/projects/71/packages/npm/"
+  },
+  "scripts": {
+    "postversion": "cp -r package.json ../../../libs/cookie-consent/package.json"
+  },
+  "module": "./index.js",
+  "main": "./index.cjs",
+  "types": "./src/index.d.ts",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-i18next": "12.1.1",
+    "react-cookie": "4.1.1",
+    "react-dom": "18.2.0",
+    "process": "0.11.10",
+    "i18next": "22.4.7",
+    "@headlessui/react": "1.7.7"
+  }
+}
